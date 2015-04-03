@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+<script>
+	$(document).ready(function () {
+		$('#home').addClass('active');
+	});
+</script>
+{% endblock %}
+{% block content %}
+    <h1>Leo's Geocoder</h1>
+    <p class="important">
+        Welcome to the Geocoder!
+    </p>
+{% endblock %}

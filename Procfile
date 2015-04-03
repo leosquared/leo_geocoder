@@ -1,1 +1,1 @@
-web: gunicorn hello:app --log-file=-
+web: gunicorn geocoder_app:app --log-file=-
