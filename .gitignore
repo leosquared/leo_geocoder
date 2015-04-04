@@ -59,3 +59,6 @@ target/
 # virtual env
 venv
 *.pyc
+
+# error log
+log.txt
