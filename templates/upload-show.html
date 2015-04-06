@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+<script>
+	$(document).ready(function () {
+		$('#uploadfile').addClass('active');
+	});
+</script>
+{% endblock %}
+{% block content %}
+    <h1>Leo's Geocoder</h1>
+
+    <table class="table table-striped">
+		<thead>
+			<th>#</th>
+			<th>Column Name</th>
+			<th>First Row Value</th>
+			<th>Data Selected</th>
+		</thead>
+		<tbody>
+		{% for key, value in display.iteritems() %}
+	    	<tr>
+	    		<td>{{ loop.index }}</td>
+	    		<td>{{ key }}</td>
+	    		<td>{{ value }}</td>
+	    		<td>
+	    			<select class="form-control" name={{ loop.index0 }} form="colselect">
+	    				<option selected> -- </option>
+		    		{% for option in options %}
+		    			<option>{{ option }}</option>
+		    		{% endfor %}
+			    	</select>
+			    </td>
+	    	</tr>
+	    {% endfor %}
+		</tbody>
+	</table>
+	<form action="/upload-process" method=POST id="colselect">
+	  <input type="submit" value="Submit">
+	</form>
+    
+{% endblock %}

@@ -1,4 +1,5 @@
 import requests, csv, time
+from collections import OrderedDict
 
 # Each function uses a different service 
 
@@ -33,11 +34,18 @@ class Geocoder():
 		r = requests.get(url, params=url_args)
 
 		result = {}
-		result['latitude'] = r.json()[0].get('lat')
-		result['longitude'] = r.json()[0].get('lon')
-		result['normalized_address'] = r.json()[0].get('display_name')
-		result['precision'] = r.json()[0].get('class')
-		result['service'] = 'OpenStreetMaps'
+		try:
+			result['latitude'] = r.json()[0].get('lat')
+			result['longitude'] = r.json()[0].get('lon')
+			result['normalized_address'] = r.json()[0].get('display_name')
+			result['precision'] = r.json()[0].get('class')
+			result['service'] = 'OpenStreetMaps'
+		except Exception, e:
+			result['latitude'] = ''
+			result['longitude'] = ''
+			result['normalized_address'] = ''
+			result['precision'] = 'ERROR: ' + str(e)
+			result['service'] = 'OpenStreetMaps'
 
 		return result
 
@@ -57,10 +65,17 @@ class Geocoder():
 		r = requests.get(url, params=url_args)
 
 		result = {}
-		result['latitude'] = r.json()['results'][0].get('geometry').get('location').get('lat')
-		result['longitude'] = r.json()['results'][0].get('geometry')['location']['lng']
-		result['normalized_address'] = r.json()['results'][0].get('formatted_address')
-		result['precision'] = r.json()['results'][0].get('geometry').get('location_type')
+		try:
+			result['latitude'] = r.json()['results'][0].get('geometry').get('location').get('lat')
+			result['longitude'] = r.json()['results'][0].get('geometry')['location']['lng']
+			result['normalized_address'] = r.json()['results'][0].get('formatted_address')
+			result['precision'] = r.json()['results'][0].get('geometry').get('location_type')
+		except Exception, e:
+			result['latitude'] = ''
+			result['longitude'] = ''
+			result['normalized_address'] = ''
+			result['precision'] = 'ERROR: ' + str(e)
+			result['service'] = 'GoogleMaps'
 
 		return result
 
@@ -70,6 +85,8 @@ class csvLoader():
 
 	"""Ingests a file as csv, prints out columns, then puts it through geocoding service"""
 
+	counter = 0
+
 	def __init__(self, filename=None):
 		self.filename = filename
 
@@ -77,7 +94,86 @@ class csvLoader():
 		infile = csv.reader(open(self.filename))
 		columns = infile.next()
 		first_row = infile.next()
-		return {'columns':columns, 'first_row':firts_row}
+
+		return OrderedDict(zip(columns, first_row))
+
+	def count_columns(self):
+		infile = csv.reader(open(self.filename))
+		return len(infile.next())
+
+	def geocode_csv(self, outfilename='sample.csv', mapping=None):
+		infile = csv.reader(open(self.filename))
+		headers = infile.next()
+
+		new_data = []
+		new_headers = headers + ['latitude', 'longitude', 'precision', 'service']
+
+		for row in infile:
+			new_row = []
+			try:
+				full_address = row[int(mapping.get('Full Address'))]
+			except:
+				full_address = None
+			try:
+				street = row[int(mapping.get('Address'))]
+			except:
+				street = None
+			try:
+				city = row[int(mapping.get('City'))]
+			except:
+				city = None
+			try:
+				state = row[int(mapping.get('State'))]
+			except:
+				state = None
+			try:
+				zip = row[int(mapping.get('Zip'))]
+			except:
+				zip = None
+
+			g = Geocoder(full_address=full_address, street=street, city=city, state=state, zip=zip)
+			r = g.nominatim()
+			new_row.extend(row)
+			new_row.extend([r['latitude'], r['longitude'], r['precision'], r['service']])
+			new_data.append(new_row)
+			csvLoader.counter += 1
+
+		outfile = csv.writer(open(outfilename, 'w'))
+		outfile.writerow(new_headers)
+		outfile.writerows(new_data)
+
+		return None
+
+
+
+
+
+class DataMapping():
+
+	"""Opens a CSV of data column mapping"""
+
+	def __init__(self, filename=None):
+		self.filename = filename
+
+	def lu_index(self):
+		infile = csv.reader(open(self.filename))
+		result = {}
+		for row in infile:
+			result[row[1]] = row[0]
+		return result
+
+	def lu_field(self):
+		infile = csv.reader(open(self.filename))
+		result = {}
+		for row in infile:
+			result[row[0]] = row[1]
+		return result
+
+	def dump_mapping(self, mapping):
+		outfile = csv.writer(open(self.filename, 'w'))
+		outfile.writerows(mapping)
+		return None
+
 
 
 

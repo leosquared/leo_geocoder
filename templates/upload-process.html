@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+<script>
+	$(document).ready(function () {
+		$('#uploadfile').addClass('active');
+	});
+</script>
+{% endblock %}
+{% block content %}
+	<p>Processed {{ count }} addresses</p>
+	<form action="/upload-result/{{ filename }}" method=POST>
+		<input type="submit" value="Get Result File"></inpu>
+	</form>
+        
+{% endblock %}

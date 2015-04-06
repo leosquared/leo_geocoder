@@ -31,13 +31,16 @@
     <li role="presentation" id="uploadfile"><a href="/upload">Upload File</a></li>	  
     </ul>
 
-	</div>	
-    <div id="content">{% block content %}{% endblock %}</div>
-    <div id="footer">
-        {% block footer %}
-        &copy; Copyright 2015 by Leo.
-        {% endblock %}
-    </div>
-</div>
+	</div>
+    
+    {% block content %}{% endblock %}
+    
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <p class="muted-text">&copy; Copyright 2015 by Leo.</p>
+      </div>
+    </nav>
+
 </body>
 </html>
