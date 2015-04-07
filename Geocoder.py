@@ -91,18 +91,18 @@ class csvLoader():
 		self.filename = filename
 
 	def show_columns(self):
-		infile = csv.reader(open(self.filename))
+		infile = csv.reader(open(self.filename, 'rU'))
 		columns = infile.next()
 		first_row = infile.next()
 
 		return OrderedDict(zip(columns, first_row))
 
 	def count_columns(self):
-		infile = csv.reader(open(self.filename))
+		infile = csv.reader(open(self.filename, 'rU'))
 		return len(infile.next())
 
 	def geocode_csv(self, outfilename='sample.csv', mapping=None):
-		infile = csv.reader(open(self.filename))
+		infile = csv.reader(open(self.filename, 'rU'))
 		headers = infile.next()
 
 		new_data = []
@@ -156,14 +156,14 @@ class DataMapping():
 		self.filename = filename
 
 	def lu_index(self):
-		infile = csv.reader(open(self.filename))
+		infile = csv.reader(open(self.filename, 'rU'))
 		result = {}
 		for row in infile:
 			result[row[1]] = row[0]
 		return result
 
 	def lu_field(self):
-		infile = csv.reader(open(self.filename))
+		infile = csv.reader(open(self.filename, 'rU'))
 		result = {}
 		for row in infile:
 			result[row[0]] = row[1]
