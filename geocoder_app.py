@@ -1,9 +1,9 @@
 import os
 from flask import Flask, request, redirect, url_for, \
-                    render_template, send_from_directory, session
+                    render_template, send_from_directory, session, flash
 from werkzeug import secure_filename
 from Geocoder import Geocoder, csvLoader, DataMapping
-from tasks import hello
+from tasks import hello # Celery task file and test function
 
 
 # Flask config
@@ -26,7 +26,7 @@ if not app.debug:
 @app.route('/')
 def home():
     session.clear()
-    hello.delay()
+    hello.delay() # Testing Celery process
     return render_template('index.html')
 
 
@@ -63,6 +63,7 @@ def upload_process():
         filename = session['geocoded_file'].split('/')[-1]
 
         return render_template('upload-process.html', count=myCSV.counter, filename=filename)
+    flash('Please Upload a File')
     return redirect(url_for('upload_file'))
 
 @app.route('/upload-result/<filename>', methods=['POST'])

@@ -1,3 +1,0 @@
-This app allows the user to upload a CSV file with addresses and other data fields, and receive geocodes based on several APIs available across the web. 
-
-This is still in development.
