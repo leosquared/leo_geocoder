@@ -3,15 +3,17 @@ from flask import Flask, request, redirect, url_for, \
                     render_template, send_from_directory, session
 from werkzeug import secure_filename
 from Geocoder import Geocoder, csvLoader, DataMapping
+from tasks import hello
 
 
+# Flask config
 UPLOAD_FOLDER = '{0}/data'.format(os.path.dirname(os.path.realpath(__file__)))
 ALLOWED_EXTENSIONS = set(['txt', 'csv'])
-
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
+# Error Log
 if not app.debug:
     import logging
     from logging import FileHandler
@@ -19,9 +21,12 @@ if not app.debug:
     file_handler.setLevel(logging.WARNING)
     app.logger.addHandler(file_handler)
 
+
+
 @app.route('/')
 def home():
     session.clear()
+    hello.delay()
     return render_template('index.html')
 
 

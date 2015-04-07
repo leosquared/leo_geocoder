@@ -62,3 +62,6 @@ venv
 
 # error log
 log.txt
+
+# Celery file
+dump.rdb
