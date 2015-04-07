@@ -26,7 +26,7 @@ if not app.debug:
 @app.route('/')
 def home():
     session.clear()
-    hello.delay() # Testing Celery process
+    #hello.delay() # Testing Celery process
     return render_template('index.html')
 
 
@@ -71,7 +71,10 @@ def upload_result(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
-
+# Error Handling
+@app.errorhandler(500)
+def page_not_found(e):
+    return render_template('500.html'), 500
 
 
 
