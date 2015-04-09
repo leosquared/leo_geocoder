@@ -85,8 +85,6 @@ class csvLoader():
 
 	"""Ingests a file as csv, prints out columns, then puts it through geocoding service"""
 
-	counter = 0
-
 	def __init__(self, filename=None):
 		self.filename = filename
 
@@ -100,6 +98,10 @@ class csvLoader():
 	def count_columns(self):
 		infile = csv.reader(open(self.filename, 'rU'))
 		return len(infile.next())
+
+	def count_rows(self):
+		infile = csv.reader(open(self.filename, 'rU'))
+		return sum(1 for row in infile)
 
 	def geocode_csv(self, outfilename='sample.csv', mapping=None):
 		infile = csv.reader(open(self.filename, 'rU'))
@@ -136,7 +138,6 @@ class csvLoader():
 			new_row.extend(row)
 			new_row.extend([r['latitude'], r['longitude'], r['precision'], r['service']])
 			new_data.append(new_row)
-			csvLoader.counter += 1
 
 		outfile = csv.writer(open(outfilename, 'w'))
 		outfile.writerow(new_headers)
