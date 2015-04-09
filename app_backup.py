@@ -2,7 +2,7 @@ import os
 from flask import Flask, request, redirect, url_for, \
                     render_template, send_from_directory, session, flash
 from werkzeug import secure_filename
-from tasks import Geocoder, csvLoader, DataMapping, file_geocode
+from tasks import Geocoder, csvLoader, DataMapping
 
 
 # Flask config
@@ -49,20 +49,19 @@ def upload_file():
 @app.route('/upload-process', methods=['GET', 'POST'])
 def upload_process():
     if request.method == 'POST':
+        myCSV = csvLoader(session['uploaded_file'])
         session['mapping_file'] = session['uploaded_file'] + '_mapping.csv'
         session['geocoded_file'] = session['uploaded_file'] + '_geocoded.csv'
-        file_geocode.delay(session['uploaded_file'], session['mapping_file'], session['geocoded_file'], request.form)
-        # myCSV = csvLoader(session['uploaded_file'])
-        # myMapping = DataMapping(filename=session['mapping_file'])
-        # mapping = []
-        # for i in range(myCSV.count_columns()):
-        #     form_value = request.form.get(str(i))
-        #     mapping.append([i, form_value])
-        # myMapping.dump_mapping(mapping)
-        # myCSV.geocode_csv(mapping=myMapping.lu_index(), outfilename=session['geocoded_file'])
+        myMapping = DataMapping(filename=session['mapping_file'])
+        mapping = []
+        for i in range(myCSV.count_columns()):
+            form_value = request.form.get(str(i))
+            mapping.append([i, form_value])
+        myMapping.dump_mapping(mapping)
+        myCSV.geocode_csv(mapping=myMapping.lu_index(), outfilename=session['geocoded_file'])
         filename = session['geocoded_file'].split('/')[-1]
 
-        return render_template('upload-process.html', filename=filename)
+        return render_template('upload-process.html', count=myCSV.counter, filename=filename)
     flash('Please Upload a File')
     return redirect(url_for('upload_file'))
 
@@ -72,12 +71,8 @@ def upload_result(filename):
 
 
 # Error Handling
-@app.errorhandler(404)
-def server_error(e):
-    return render_template('404.html'), 404
-
 @app.errorhandler(500)
-def server_error(e):
+def page_not_found(e):
     return render_template('500.html'), 500
 
 

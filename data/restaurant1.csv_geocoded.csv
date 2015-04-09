@@ -1,0 +1,108 @@
+Restaurant,Cuisine,Neighborhood,Dollar,Address,City,State,latitude,longitude,precision,service
+Alegria,Mexican,Vienna,$$,111 Church St.,Vienna,VA,38.482607058609,-75.8262044979116,place,OpenStreetMaps
+Ardeo & Bardeo,American,Cleveland Park,$$$,3311 Connecticut Ave. NW,Washington,DC,38.9339164,-77.0570908388898,building,OpenStreetMaps
+Ayse,Middle Eastern,Frederick,$$,6 N. East St.,Frederick,MD,39.4050018,-77.4038112,highway,OpenStreetMaps
+Baby Wale,American,Mount Vernon Triangle,$$,1124 9th St. NW,Washington,DC,38.9050569285714,-77.0240540714286,place,OpenStreetMaps
+Bangkok Golden,Laotian,Seven Corners,$,6395 Seven Corners Center,Seven Corners,VA,,,ERROR: list index out of range,OpenStreetMaps
+Bar Pilar,American,Logan Circle,$$,1833 14th St. NW,Washington,DC,38.9151255,-77.0315828,amenity,OpenStreetMaps
+Bartlett Pear Inn,American,Easton,$$$,28 S. Harrison St,Easton,MD,38.773619,-76.0740949,highway,OpenStreetMaps
+Bastille,French,Old Town Alexandria,$$$,1201 N. Royal St.,Old Town Alexandria,VA,,,ERROR: list index out of range,OpenStreetMaps
+Birch and Barley,American,Logan Circle,$$$,1337 14th St. NW,Washington,DC,38.9084824,-77.0316071,amenity,OpenStreetMaps
+Black's Bar and Kitchen,American,Bethesda,$$$,7750 Woodmont Ave.,Bethesda,MD,38.9871184621057,-77.0961240045567,place,OpenStreetMaps
+Blacksalt,Seafood,Palisades,$$$$,4883 MacArthur Blvd. NW,Washington,DC,38.9177879,-77.0966086,amenity,OpenStreetMaps
+BLT Steak,Steakhouse,Downtown,$$$$,1625 I St. NW,Washington,DC,38.9017153,-77.0376021,amenity,OpenStreetMaps
+Blue Duck Tavern,American,West End,$$$$,1201 24th St. NW,Washington,DC,38.9057969,-77.0510924,tourism,OpenStreetMaps
+Bombay Club,Indian,Downtown,$$$,815 Connecticut Ave. NW,Washington,DC,38.9008896,-77.0380208,amenity,OpenStreetMaps
+Bonchon Chicken,Korean,Clarendon,$,2209-E N. Pershing Dr.,Clarendon,VA,38.881275,-77.084287,place,OpenStreetMaps
+Boqueria,Spanish,Dupont Circle,$$,1837 M St. NW,Washington,DC,38.9057342676243,-77.0422485228689,place,OpenStreetMaps
+Bourbon Steak,Steakhouse,Georgetown,$$$$,2800 Pennsylvania Ave. NW,Washington,DC,38.9046911,-77.0572437,tourism,OpenStreetMaps
+Brabo by Robert Wiedmaier,Belgian,Old Town Alexandria,$$$$,1600 King St.,Old Town Alexandria,VA,,,ERROR: list index out of range,OpenStreetMaps
+Casa Luca,Italian,Downtown,$$$,1099 New York Ave. NW,Washington,DC,38.9015167,-77.0264924,amenity,OpenStreetMaps
+Cashion's Eat Place,American,Adams Morgan,$$$$,1819 Columbia Rd. NW,Washington,DC,38.9218896,-77.0436621,amenity,OpenStreetMaps
+Cava Mezze,Greek,Eastern Market,$$,527 8th St. SE,Washington,DC,38.8819133,-76.9952601,amenity,OpenStreetMaps
+Cava Mezze,Greek,Clarendon,$$,527 8th St. SE,Washington,DC,38.8819133,-76.9952601,amenity,OpenStreetMaps
+Cava Mezze,Greek,Rockville,$$,9713 Traville Gateway Drive,Rockville,MD,,,ERROR: list index out of range,OpenStreetMaps
+Central Michel Richard,American,Penn Quarter,$$$,1001 Pennsylvania Ave. NW,Washington,DC,38.8950137,-77.0264929,amenity,OpenStreetMaps
+CityZen,American,Downtown,$$$$,1330 Maryland Ave. SW,Washington,DC,38.8835916,-77.0304489,tourism,OpenStreetMaps
+Corduroy,American,Mount Vernon Triangle,$$$$,1122 9th St. NW,Washington,DC,38.9050814,-77.0242552,amenity,OpenStreetMaps
+Cork,American,Logan Circle,$$$,1720 14th St. NW,Washington,DC,38.913322,-77.0322326,amenity,OpenStreetMaps
+Daikaya,Japanese,Penn Quarter,$$,705 6th St. NW,Washington,DC,38.8985575,-77.019801,place,OpenStreetMaps
+Del Campo,Latin,Penn Quarter,$$$,777 I St. NW,Washington,DC,38.9011053,-77.0227291,amenity,OpenStreetMaps
+DGS Delicatessan,Jewish,Dupont Circle,$$,1317 Connecticut Ave. NW,Washington,DC,38.9076612123808,-77.0421760750481,place,OpenStreetMaps
+Doi Moi,Asian Fusion,Logan Circle,$$$,1800 14th St. NW,Washington,DC,38.9142634,-77.0322156,amenity,OpenStreetMaps
+8407 Kitchen Bar,American,Silver Spring,$$$$,8407 Ramsey Ave. ,Silver Spring,MD,38.9939665,-77.028990175,amenity,OpenStreetMaps
+Estadio,Spanish,Logan Circle,$$$,1520 14th St. NW,Washington,DC,38.9102557,-77.0322099,place,OpenStreetMaps
+Ethiopic,Ethiopian,H Street,$$,401 H St. NE,Washington,DC,38.9000242,-77.0003904,amenity,OpenStreetMaps
+Etto,Italian,Logan Circle,$$$,1541 14th St. NW,Washington,DC,38.9110049,-77.0316696,amenity,OpenStreetMaps
+Et Voila,Belgian,Palisades,$$$,5120 MacArthur Blvd.,Washington,DC,38.9254351,-77.102318,amenity,OpenStreetMaps
+Fiola,Italian,Penn Quarter,$$$,678 Indiana Ave. NW,Washington,DC,38.893964,-77.021258,place,OpenStreetMaps
+Food Wine & Co.,American,Bethesda,$$$,7272 Wisconsin Ave.,Bethesda,MD,38.9818779795918,-77.0931029183674,place,OpenStreetMaps
+G by Mike Isabella,Sandwiches,U Street,$$,2201 14th St. NW,Washington,DC,38.91932685,-77.0314961653725,building,OpenStreetMaps
+Graffiato,Italian,Penn Quarter,$$$,707 6th St. NW,Washington,DC,38.89861975,-77.019801,place,OpenStreetMaps
+Green Pig Bistro,American,Clarendon,$$,1025 N. Fillmore St,Clarendon,VA,38.8861653,-77.0927312,amenity,OpenStreetMaps
+Hank's Oyster Bar,Seafood,Dupont Circle,$$$,1624 Q St. NW,Washington,DC,38.910831,-77.0381262218827,building,OpenStreetMaps
+Hank's Oyster Bar,Seafood,Capitol Hill,$$$,633 Pennsylvania Ave. SE,Washington,DC,38.8852240338586,-76.9977731377155,place,OpenStreetMaps
+Hank's Oyster Bar,Seafood,Old Town Alexandria,$$$,1026 King St. ,Old Town Alexandria,VA,,,ERROR: list index out of range,OpenStreetMaps
+The Inn at Little Washington,American,Washington,$$$$,309 Middle St.,Washington,VA,38.7134208,-78.1590623,highway,OpenStreetMaps
+Izakaya Seki,Japanese,U Street,$$$,1117 V. St. NW,Washington,DC,38.9182529,-77.0277977742092,building,OpenStreetMaps
+Jaleo,Spanish,Penn Quarter,$$,480 7th St. NW,Washington,DC,38.8959243,-77.0221617,amenity,OpenStreetMaps
+Johnny's Half Shell,Seafood,Capitol Hill,$$$,400 N. Capitol St. NW,Washington,DC,38.8953291,-77.0093388,building,OpenStreetMaps
+Kapnos,Greek,U Street,$$$,2201 14th St. NW,Washington,DC,38.91932685,-77.0314961653725,building,OpenStreetMaps
+Kaz Sushi Bistro,Japanese,Downtown,$$$,1915 I St. NW,Washington,DC,38.90147,-77.044253,amenity,OpenStreetMaps
+Kogiya,Korean,Annandale,$$,4220-A Annandale Rd.,Annandale,VA,38.839469,-77.1990959,highway,OpenStreetMaps
+Komi,Greek,Dupont Circle,$$$$,1509 17th St. NW,Washington,DC,38.910096,-77.0382584,amenity,OpenStreetMaps
+La Limena,Peruvian,Rockville,$,765-B Rockville Pike,Rockville,MD,39.0782614615385,-77.1410603846154,place,OpenStreetMaps
+L'Auberge Chez Francois,French,Great Falls,$$$$,332 Springvale Rd.,Great Falls,VA,39.034708,-77.3095229,highway,OpenStreetMaps
+La Table Provencale,French,White Post,$$$$,13630 Lord Fairfax Hwy.,White Post,VA,39.0666676510067,-78.096500852349,place,OpenStreetMaps
+Le Diplomate,French,Logan Circle,$$$,1610 14th St. NW,Washington,DC,38.9115521,-77.0322758,amenity,OpenStreetMaps
+Liberty Tavern,American,Clarendon,$$$,3195 Wilson Blvd.,Clarendon,VA,38.8861913479413,-77.096826373794,place,OpenStreetMaps
+Little Serow,Thai,Dupont Circle,$$$$,1511 17th St. NW,Washington,DC,38.910153,-77.038299,amenity,OpenStreetMaps
+Lyon Hall,French,Clarendon,$$$,3100 N. Washington Blvd.,Clarendon,VA,38.885686,-77.094964,place,OpenStreetMaps
+The Majestic,American,Old Town Alexandria,$$$,911 King St.,Old Town Alexandria,VA,,,ERROR: list index out of range,OpenStreetMaps
+Makoto,Japanese,Palisades,$$$$,4822 MacArthur Blvd. NW,Washington,DC,38.9167327,-77.0963702,amenity,OpenStreetMaps
+Maple Ave. Restaurant,Asian Fusion,Vienna,$$,147 Maple Ave.,Vienna,VA,38.897180244898,-77.2704884489796,place,OpenStreetMaps
+Marcel's,French,West End,$$$$,2401 Pennsylvania Ave.,Washington,DC,38.9033344,-77.0517211,amenity,OpenStreetMaps
+Minibar,American,Penn Quarter,$$$$,855 E St. NW,Washington,DC,38.8962132881853,-77.0234953056351,place,OpenStreetMaps
+Mintwood Place,American,Adams Morgan,$$$,1813 Columbia Rd. NW,Washington,DC,38.9220544,-77.0435595,shop,OpenStreetMaps
+Montmartre,French,Eastern Market,$$$,327 7th St. SE,Washington,DC,38.8853898,-76.9963647,amenity,OpenStreetMaps
+Nava Thai,Thai,Wheaton,$$,11301 Fern St. ,Wheaton,MD,39.0407767241379,-77.049344183908,place,OpenStreetMaps
+Nopa Kitchen & Bar,American,Penn Quarter,$$$,800 F. St. NW,Washington,DC,38.897125,-77.023111,place,OpenStreetMaps
+Nostos,Greek,Tysons Corner,$$$,8100 Boone Blvd.,Tysons Corner,VA,38.913214,-77.225783,place,OpenStreetMaps
+Obelisk,Italian,Dupont Circle,$$$$,2029 P St. NW,Washington,DC,38.909793,-77.0463016,amenity,OpenStreetMaps
+Oval Room,American,Downtown,$$$$,800 Connecticut Ave. NW,Washington,DC,38.9004157,-77.0384717,amenity,OpenStreetMaps
+Palena & Palena Caf_,American,Cleveland Park,$$$$,3529 Connecticut Ave. NW,Washington,DC,38.9364358,-77.0585436,amenity,OpenStreetMaps
+Passage to India,Indian,Bethesda,$$,4931 Cordell Ave.,Bethesda,MD,38.9889574693878,-77.0986355102041,place,OpenStreetMaps
+PassionFish,Seafood,Reston,$$$,11960 Democracy Dr.,Reston,VA,38.9579694489796,-77.3575983061224,place,OpenStreetMaps
+Pearl Dive Oyster Palace,Seafood,Logan Circle,$$$,1612 14th St. NW,Washington,DC,38.9116314,-77.0322597,amenity,OpenStreetMaps
+Proof,American,Penn Quarter,$$$$,775 G St. NW,Washington,DC,38.8986469,-77.0226604,building,OpenStreetMaps
+Rappahannock Oyster Bar,Seafood,Northeast,$$,1309 5th St. NE,Washington,DC,38.90860435,-76.997407154167,amenity,OpenStreetMaps
+Rasika,Indian,Penn Quarter,$$$,633 D St. NW,Washington,DC,38.894978,-77.0213706,amenity,OpenStreetMaps
+Rasika West End,Indian,West End,$$$,1190 New Hampshire Ave. NW,Washington,DC,38.9051690196062,-77.0477857198157,place,OpenStreetMaps
+Ray's the Steaks,Steakhouse,Courthouse,$$$,2300 Wilson Blvd.,Courthouse,VA,,,ERROR: list index out of range,OpenStreetMaps
+Ray's to the Third,Steakhouse,Courthouse,$$$,1650 Wilson Blvd.,Courthouse,VA,,,ERROR: list index out of range,OpenStreetMaps
+The Red Hen,American,Bloomingdale,$$$,1822 1st St. NE,Washington,DC,38.9078071,-77.0058844,highway,OpenStreetMaps
+Restaurant Eve,American,Old Town Alexandria,$$$$,110 S Pitt St. ,Old Town Alexandria,VA,,,ERROR: list index out of range,OpenStreetMaps
+Restaurant at Patowmack Farm,American,Lovettsville,$$$$,42461 Lovettsville Rd.,Lovettsville,VA,39.280751,-77.559387,place,OpenStreetMaps
+Rice Paper,Vietnamese,Seven Corners,$,6775 Wilson Blvd.,Seven Corners,VA,38.8720008,-77.1553293,highway,OpenStreetMaps
+Ripple,American,Cleveland Park,$$$,3417 Connecticut Ave. NW,Washington,DC,38.9349673,-77.057668,amenity,OpenStreetMaps
+Ris,American,West End,$$$,2275 L St. NW,Washington,DC,38.9039558,-77.0497946,amenity,OpenStreetMaps
+Rogue 24,American,Mount Vernon Triangle,$$$$,922 N St. NW,Washington,DC,38.9065656,-77.0248564,amenity,OpenStreetMaps
+Rose's Luxury,American,Eastern Market,$$$,717 8th St. SE,Washington,DC,38.8810036510364,-76.9950797125559,place,OpenStreetMaps
+Ruan Thai,Thai,Wheaton,$$,11407 Amherst Ave.,Wheaton,MD,39.0416385,-77.048023,place,OpenStreetMaps
+Rus Uz,Russian,Ballston,$$,1000 N. Randolph St.,Ballston,VA,,,ERROR: list index out of range,OpenStreetMaps
+Seasonal Pantry,American,Mount Vernon Triangle,$$$$,1314 1/2 9th St. NW,Washington,DC,38.8972577,-77.0239516,highway,OpenStreetMaps
+1789,American,Georgetown,$$$$,1226 36th St. NW,Washington,DC,38.9060191,-77.0704195,amenity,OpenStreetMaps
+The Source,Asian Fusion,Penn Quarter,$$$$,575 Pennsylvania Ave N.W.,Washington,DC,38.893361,-77.0196161,amenity,OpenStreetMaps
+Sushi Sono,Japanese,Columbia,$$$,10215 Wincopin Cir.,Columbia,MD,39.2160358,-76.8557755,amenity,OpenStreetMaps
+Sushi Taro,Japanese,Dupont Circle,$$$$,1503 17th St. NW,Washington,DC,38.909944,-77.0382421,amenity,OpenStreetMaps
+Table,American,Mount Vernon Triangle,$$$,903 N St. NW,Washington,DC,38.9073228502213,-77.0241903492455,place,OpenStreetMaps
+Toki Underground,Japanese,H Street,$,1234 H St. NE,Washington,DC,38.9003573,-76.9890321,amenity,OpenStreetMaps
+2941,American,Falls Church,$$$$,2941 Fairview Park Dr.,Falls Church,VA,,,ERROR: list index out of range,OpenStreetMaps
+2 Amy's,Pizza ,Cathedral Heights,$$,3715 Macomb St. NW,Washington,DC,38.933677,-77.073102,amenity,OpenStreetMaps
+Vermillion,American,Old Town Alexandria,$$$$,1120 King St.,Old Town Alexandria,VA,,,ERROR: list index out of range,OpenStreetMaps
+Vidalia,Southern,Dupont Circle,$$$$,1990 M St. NW,Washington,DC,38.9054817,-77.0445142,amenity,OpenStreetMaps
+Vin 909 Winecafe,American,Annapolis,$$,909 Bay Ridge Ave.,Annapolis,MD,38.9683449,-76.487047,highway,OpenStreetMaps
+Westend Bistro,American,West End,$$$$,1190 22nd St. NW,Washington,DC,38.9048951,-77.0490631,place,OpenStreetMaps
+Woodberry Kitchen,American,Baltimore,$$$$,2010 Clipper Park Rd.,Baltimore,MD,39.33195215,-76.6457294253685,building,OpenStreetMaps
+Woodward Table,American,Downtown,$$$,1430 H St. NW,Washington,DC,38.9001181034672,-77.0325329972626,place,OpenStreetMaps
+Zaytinya,Greek,Penn Quarter,$$$,701 9th St. NW,Washington,DC,38.898805,-77.023721,amenity,OpenStreetMaps
