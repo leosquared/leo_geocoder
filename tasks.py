@@ -11,5 +11,7 @@ app.conf.update(BROKER_URL=os.environ.get('REDISTOGO_URL', 'redis://localhost:63
 
 
 @app.task
-def hello():
-	print 'hello'
+def hello(filename):
+	f = open(filename, 'w')
+	f.write('hello, world')
+	f.close()

@@ -4,6 +4,7 @@ billiard==3.3.0.19
 celery==3.1.17
 Flask==0.10.1
 gunicorn==19.3.0
+honcho==0.6.6
 itsdangerous==0.24
 Jinja2==2.7.3
 kombu==3.0.24

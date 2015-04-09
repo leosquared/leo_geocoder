@@ -26,7 +26,7 @@ if not app.debug:
 @app.route('/')
 def home():
     session.clear()
-    #hello.delay() # Testing Celery process
+    hello.delay(os.path.join(app.config['UPLOAD_FOLDER'], 'test.txt')) # Testing Celery process
     return render_template('index.html')
 
 
@@ -66,7 +66,7 @@ def upload_process():
     flash('Please Upload a File')
     return redirect(url_for('upload_file'))
 
-@app.route('/upload-result/<filename>', methods=['POST'])
+@app.route('/upload-result/<filename>', methods=['POST', 'GET'])
 def upload_result(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
