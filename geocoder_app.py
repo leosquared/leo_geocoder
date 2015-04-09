@@ -26,7 +26,7 @@ if not app.debug:
 @app.route('/')
 def home():
     session.clear()
-    hello.delay(os.path.join(app.config['UPLOAD_FOLDER'], 'test.txt')) # Testing Celery process
+    hello.delay(os.path.join(app.config['UPLOAD_FOLDER'], 'test1.txt')) # Testing Celery process
     return render_template('index.html')
 
 
