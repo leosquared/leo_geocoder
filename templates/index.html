@@ -14,7 +14,8 @@
 {% block content %}
     <h3>Leo's Geocoder</h3>
     <p class="important">
-        Welcome to the Geocoder! You will be prompted to upload a CSV file, map the columns, and geocodes will be appended to the file for you to download. Currently only works with very small files of less than 100 records only. 
+        Welcome to the Geocoder! You will be prompted to upload a CSV file, map the columns, and geocodes will be appended to the file for you to download. <br>
+        If you have a large file, make sure to wait a few minutes before downloading the file to avoid downloading only partial results.
     </p>
     <form action="/upload" method=GET>
 		<button type="submit" class="btn btn-default">Next!</button>
