@@ -1,0 +1,5 @@
+Restaurant,Cuisine,Neighborhood,Dollar,Address,City,State,latitude,longitude,precision,service
+Alegria,Mexican,Vienna,$$,111 Church St.,Vienna,VA,38.482607058609,-75.8262044979116,place,OpenStreetMaps
+Ardeo & Bardeo,American,Cleveland Park,$$$,3311 Connecticut Ave. NW,Washington,DC,38.9339164,-77.0570908388898,building,OpenStreetMaps
+Ayse,Middle Eastern,Frederick,$$,6 N. East St.,Frederick,MD,39.4050018,-77.4038112,highway,OpenStreetMaps
+Baby Wale,American,Mount Vernon Triangle,$$,1124 9th St. NW,Washington,DC,38.9050569285714,-77.0240540714286,place,OpenStreetMaps

@@ -107,8 +107,10 @@ class csvLoader():
 		infile = csv.reader(open(self.filename, 'rU'))
 		headers = infile.next()
 
-		new_data = []
 		new_headers = headers + ['latitude', 'longitude', 'precision', 'service']
+
+		outfile = csv.writer(open(outfilename, 'w'))
+		outfile.writerow(new_headers)
 
 		for row in infile:
 			new_row = []
@@ -137,11 +139,8 @@ class csvLoader():
 			r = g.nominatim()
 			new_row.extend(row)
 			new_row.extend([r['latitude'], r['longitude'], r['precision'], r['service']])
-			new_data.append(new_row)
+			outfile.writerow(new_row)
 
-		outfile = csv.writer(open(outfilename, 'w'))
-		outfile.writerow(new_headers)
-		outfile.writerows(new_data)
 
 		return None
 
